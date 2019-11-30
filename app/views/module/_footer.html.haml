@@ -2,21 +2,21 @@
   .container
     .row.align-items-center
       .col-md-4
-        %span.copyright Copyright © Your Website 2019
+        -# %span.copyright Copyright © Your Website 2019
       .col-md-4
         %ul.list-inline.social-buttons
           %li.list-inline-item
-            %a{:href => "#"}
-              %i.fab.fa-twitter
+            = link_to('#') do
+              = fa_icon("facebook-square")
           %li.list-inline-item
-            %a{:href => "#"}
-              %i.fab.fa-facebook-f
+            = link_to('#') do
+              = fa_icon("instagram")
           %li.list-inline-item
-            %a{:href => "#"}
-              %i.fab.fa-linkedin-in
+            = link_to('#') do
+              = fa_icon("twitter-square")
       .col-md-4
         %ul.list-inline.quicklinks
           %li.list-inline-item
-            %a{:href => "#"} Privacy Policy
+            -# %a{:href => "#"} Privacy Policy
           %li.list-inline-item
-            %a{:href => "#"} Terms of Use
+            -# %a{:href => "#"} Terms of Use
